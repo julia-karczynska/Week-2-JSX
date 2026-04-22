@@ -1,9 +1,13 @@
+/* ===== Base Reset ===== */
+/* Remove default spacing and use border-box sizing everywhere */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== Page Layout ===== */
+/* Center the pricing cards in viewport and apply page background */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +18,8 @@ body {
     padding: 20px;
 }
 
+/* ===== Cards Row ===== */
+/* Keep cards in one row with consistent spacing */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,8 @@ body {
     align-items: flex-start;
 }
 
+/* ===== Card Shell ===== */
+/* Individual pricing card container */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +42,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Top content stack inside card */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan title text */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +57,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row container */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +65,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (e.g., Free, $20) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Price period label (e.g., /mo.) */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Features block spacing */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro text above feature list */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Remove default list styling */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Feature item row */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +105,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon style */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +113,8 @@ body {
     font-weight: 400;
 }
 
+/* ===== Buttons ===== */
+/* Shared button style used by both plans */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +129,34 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Shared hover state */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Shared active state */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary variant for Pro CTA */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary hover state */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary active state */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ===== Fixed Page Badge ===== */
+/* Floating label at top center of page */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +170,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasized part of page label text */
 .page-label strong {
     color: #333;
 }

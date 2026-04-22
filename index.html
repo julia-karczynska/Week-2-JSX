@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic document setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
     <title>Pricing Plans — HTML version</title>
+    <!-- Font loading: Inter from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small top label showing this page version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    <!-- Wrapper for all pricing cards -->
     <div class="cards-container">
+        <!-- ===== Card 1: Hobby plan ===== -->
         <div class="card">
+            <!-- Top content area (title, price, features) -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
+                <!-- Price row -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                <!-- Feature list area -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
+                    <!-- Bullet list of included features -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,17 +47,23 @@
                     </ul>
                 </div>
             </div>
+            <!-- Card action button -->
             <button class="download-button secondary">Download</button>
         </div>
+        <!-- ===== Card 2: Pro plan ===== -->
         <div class="card">
+            <!-- Top content area (title, price, features) -->
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
+                <!-- Price row with amount + period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                <!-- Feature list area -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
+                    <!-- Bullet list of included features -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -67,7 +84,46 @@
                     </ul>
                 </div>
             </div>
+            <!-- Main call-to-action button -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- ===== Card 3: Enterprise plan ===== -->
+        <div class="card">
+            <!-- Top content area (title, price, features) -->
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <!-- Price row with amount + period -->
+                <p class="card-price">
+                    <span class="card-price-amount">$80</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <!-- Feature list area -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <!-- Bullet list of included features -->
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team workspaces
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated onboarding
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced security controls
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main call-to-action button -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
